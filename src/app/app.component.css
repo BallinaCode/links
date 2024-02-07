@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, red, purple, rgb(59, 59, 211));
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li{
+   transition: all .3s linear; 
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li:hover{
+    background-color: white;
+    font-size: 40px;
+    color: black;
+}
+
+li:hover >a{
+    color: black;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1200px) {
+    ul{
+        flex-direction: column;
+    }
+  }
